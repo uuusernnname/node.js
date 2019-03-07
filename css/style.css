@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'open sans';
+  src: url('../fonts/SegoeUI.eot') format('eot'),
+          url('../fonts/SegoeUI.woff') format('woff'),
+          url('../fonts/SegoeUI.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open sans';
+  src: url('../fonts/SegoeUI-SemiBold.eot') format('eot'),
+          url('../fonts/SegoeUI-SemiBold.woff') format('woff'),
+          url('../fonts/SegoeUI-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open sans';
+  src: url('../fonts/SegoeUI-Bold.eot') format('eot'),
+          url('../fonts/SegoeUI-Bold.woff') format('woff'),
+          url('../fonts/SegoeUI-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(-45deg, rgb(233, 231, 243),rgb(247, 247, 251));
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(-90deg, rgb(54, 44, 112),rgb(26, 16, 78));
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.title {
+  margin-left: 20%;
+  width: 100%;
+}
+
+header h1 {
+  color: #fff;
+}
+
+.sources {
+  padding-right: 5%;
+}
+
+.col {
+  margin-top: 80px;
+  margin-left: 20%;
+}
+
+.col_item {
+  margin-bottom: 50px;
+}
+
+.col1 {
+  margin-left: 10%;
+}
+
+.col_item1 {
+  width: 50%;
+}
+
+img {
+  width: 50%;
+  transition: 1s;
+}
+
+img:hover {
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.btn {
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgb(26, 16, 78);
+  color: #fff;
+}
+
+.window {
+  width: 50%;
+  height: 120px;
+  padding: 20px;
+  background: rgb(255, 241, 241);
+}
+
+@media (max-width: 1080px) {
+  .title {
+    margin-left: 5%;
+  }
+
+  .col {
+    margin-left: 5%;
+  }
+
+  .col_item1 {
+    width: 100%;
+  }
+
+  img {
+    width: 80%;
+  }
+}

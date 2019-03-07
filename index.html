@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/classes.css">
+  <link rel="shortcut icon" href="img/package.ico" /> 
+  <title>NodeJs</title>
+</head>
+<body>
+  <header class="df aic">
+    <div class="title">
+      <h1>Установка компонентов:</h1>
+    </div>
+  </header>
+  <section class="sources">
+    <div class="col">
+      <div class="col_item">
+        <h2>Package.json</h2>
+        <p><a href="http://www.dropbox.com/s/niwmnfg0rmnq01x/package.json?dl=1">Скачать</a> - для инициализации ввести <span>npm init</span></p>
+        <p># При инициалиализации в качестве тестовой команды указать:</p>
+        <p># command: <span>jest --coverage</span></p>
+      </div>
+      <div class="col_item">
+        <h2>ESLint</h2>
+        <ol>
+          <li><p>ESLint хранит настройки в файле <a href="http://www.dropbox.com/s/734ggj3aak4u7ea/.eslintrc.json?dl=1">.eslintrc.json</a></p></li>
+          <li><p>Также нужен файл <a href="http://www.dropbox.com/s/q31394zhdxm08ps/.eslintignore?dl=1">.eslintignore</a></p></li>
+          <li><p>Установка с помощью <span>npm install --save-dev eslint</span></p></li>
+          <li><p>Формируем набор праил <span>npx eslint --init</span></p></li>
+          <li><p>Создадим отдельный скрипт в package.json <span>"lint": "eslint ."</span></p></li>
+          <li><p>Запускаем линтер <span>npm run lint</span></p></li>
+          <li><p>Для того, чтобы исправить проблемы <span>npm run lint -- --fix</span></p></li>
+        </ol>                                        
+      </div>
+      <div class="col_item">
+        <h2>Babel</h2>
+        <ol>
+          <li><p>Устанавливаем babel <span>npm install --save-dev @babel/core @babel/cli @babel/preset-env</span></p></li>
+          <li><p>Конфигурационный файл <a href="http://www.dropbox.com/s/9h97ubdjg4ua97h/.babelrc?dl=1">.babelrc</a></p></li>
+          <li><p>Добавляем в package.json <span>"build": "babel src -d dist"</span></p></li>
+          <li><p>Запускаем транспайлинг <span>npm run build</span></p></li>
+          <li><p>Файл с именем <a href="http://www.dropbox.com/s/bxegw3mzxfgxm9h/.browserslistrc?dl=1">.browserslistrc</a> — позволяет установить, поддержку <br>
+            каких браузеров (окружений) необходимо обеспечивать,</p></li>
+        </ol>
+      </div>
+      <div class="col_item">
+        <h2>JEST</h2>
+        <ol>
+          <li><p>Установка с помощью <span>npm install --save-dev jest babel-jest @babel/core @babel/cli @babel/preset-env</span></p></li>
+          <li><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<span>npm install @babel/polyfill</span></p></li>
+          <li><p>Пропишем скрипт в package.json<span>"test": "jest"</span></p></li>
+          <li><p>Добавить в <span>"env":</span> .eslintrc.json <span>"jest": true</span></p></li>
+          <li><p>Запуск автотестов <span>npm run test</span></p></li>
+        </ol>
+      </div>
+      <div class="col_item">
+        <h2>Webpack</h2>
+        <ol>
+          <li><p>Установка <span>npm install --save-dev webpack webpack-cli babel-loader path</span></p></li>
+          <li><p>В скрипты package.jcon <span>"build": "webpack --mode production"</span></p></li>
+          <li><p>Запуск <span>npm run build</span></p></li>
+          <li><p>Плагин для сборки HTML <span>npm install --save-dev html-webpack-plugin html-loader</span></p></li>
+          <li><p>Плагин для сборки CSS <span>npm install --save-dev mini-css-extract-plugin css-loader</span></p></li>
+          <li><p>Установка Webpack Dev-server <span>npm install --save-dev webpack-dev-server</span></p></li>
+          <li><p>В скрипты <span>"start": "webpack-dev-server --open --mode development"</span></p></li>
+          <li><p>Запуск <span>npm start</span></p></li>
+          <li><p><a href="http://www.dropbox.com/s/japbh81q7cx6o44/webpack.config.js?dl=1">Скачать</a> конфигуратор webpack</p></li>
+        </ol>
+      </div>
+      <div class="col_item">
+        <h2>.gitignore</h2>
+        <p><a href="http://www.dropbox.com/s/nehapromjq99hfb/.gitignore?dl=1">Скачать</a></p>
+      </div>
+      <div class="col_item">
+        <p><a href="homework.html">Домашние задания</a></p>
+      </div>
+      <div class="col_item">
+        <p>В <span>.babelrc</span></p>
+        <div class="window">
+          <span>
+            { <br>
+              &emsp;"presets": [["@babel/preset-env", { <br>
+                &emsp;&ensp;"useBuiltIns": "usage" <br>
+                &emsp;}]] <br>
+            }
+          </span>
+        </div>
+      </div>
+      <div class="col_item">
+        <img src="img/eslint.png" alt="babel">
+      </div>
+      <div class="col_item">
+        <img src="img/html.png" alt="babel">
+      </div>
+      <div class="col_item">
+        <img src="img/css.png" alt="babel">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
