@@ -72,15 +72,6 @@ header h1 {
   width: 50%;
 }
 
-img {
-  width: 50%;
-  transition: 1s;
-}
-
-img:hover {
-  box-shadow: 0 0 30px rgba(0,0,0,0.4);
-}
-
 .btn {
   border: none;
   padding: 20px;
@@ -91,9 +82,9 @@ img:hover {
 
 .window {
   width: 50%;
-  height: 120px;
-  padding: 20px;
+  padding: 10px;
   background: rgb(255, 241, 241);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 @media (max-width: 1080px) {
@@ -107,9 +98,5 @@ img:hover {
 
   .col_item1 {
     width: 100%;
-  }
-
-  img {
-    width: 80%;
   }
 }

@@ -20,6 +20,9 @@
   <section class="sources">
     <div class="col">
       <div class="col_item">
+        <p><a href="homework.html">Домашние задания</a></p>
+      </div>
+      <div class="col_item">
         <h2>Package.json</h2>
         <p><a href="http://www.dropbox.com/s/niwmnfg0rmnq01x/package.json?dl=1">Скачать</a> - для инициализации ввести <span>npm init</span></p>
         <p># При инициалиализации в качестве тестовой команды указать:</p>
@@ -73,34 +76,46 @@
         </ol>
       </div>
       <div class="col_item">
-        <h2>.gitignore</h2>
-        <p><a href="http://www.dropbox.com/s/nehapromjq99hfb/.gitignore?dl=1">Скачать</a></p>
+        <h2>JSDoc</h2>
+        <ol>
+          <li><p>Установка <span>npm install --save-dev jsdoc</span></p></li>
+          <li><p>В скрипты package.jcon <span>"doc": "jsdoc -c jsdoc.conf.json"</span></p></li>
+          <li><p>Запуск <span>npm run doc</span></p></li>
+        </ol>
       </div>
       <div class="col_item">
-        <p><a href="homework.html">Домашние задания</a></p>
-      </div>
-      <div class="col_item">
-        <p>В <span>.babelrc</span></p>
-        <div class="window">
-          <span>
-            { <br>
-              &emsp;"presets": [["@babel/preset-env", { <br>
-                &emsp;&ensp;"useBuiltIns": "usage" <br>
-                &emsp;}]] <br>
-            }
-          </span>
+          <p>Создайте конфигурационный файл JSDoc - <span>jsdoc.conf.json</span></p>
+          <div class="window">
+            <span>
+              { <br>
+                &emsp;"source": { <br>
+                  &emsp;&ensp;"include": ["src/js"] <br>
+                  &emsp;}, <br>
+                &emsp;"opts": { <br>
+                  &emsp;&ensp;"encoding": "utf8", <br>
+                  &emsp;&ensp;"destination": "docs", <br>
+                  &emsp;&ensp;"recurse": true <br>
+                  &emsp;} <br>
+              }
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="col_item">
-        <img src="img/eslint.png" alt="babel">
-      </div>
-      <div class="col_item">
-        <img src="img/html.png" alt="babel">
-      </div>
-      <div class="col_item">
-        <img src="img/css.png" alt="babel">
-      </div>
-    </div>
+        <div class="col_item">
+          <p>В <span>.babelrc</span></p>
+          <div class="window">
+            <span>
+              { <br>
+                &emsp;"presets": [["@babel/preset-env", { <br>
+                  &emsp;&ensp;"useBuiltIns": "usage" <br>
+                  &emsp;}]] <br>
+                }
+              </span>
+            </div>
+          </div>
+        <div class="col_item">
+          <h2>.gitignore</h2>
+          <p><a href="http://www.dropbox.com/s/nehapromjq99hfb/.gitignore?dl=1">Скачать</a></p>
+        </div>
   </section>
 </body>
 </html>
