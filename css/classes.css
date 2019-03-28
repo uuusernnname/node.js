@@ -71,7 +71,11 @@ span {
   }
 
   .col {
-    margin-top: 40px;
+    margin-top: 20px;
+  }
+  
+  .mt {
+    margin-top: 20px;
   }
   
   .col_item {
