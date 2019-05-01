@@ -71,10 +71,35 @@ span {
   }
 
   .col {
-    margin-top: 40px;
+    margin-top: 20px;
+  }
+  
+  .mt {
+    margin-top: 20px;
   }
   
   .col_item {
     margin-bottom: 20px;
+  }
+
+  .buttons {
+    margin-left: 5%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .button {
+    background-color: #271D5E;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .button a {
+    font-size: 15px;
+    color: #fff;
   }
 }
