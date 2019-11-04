@@ -124,8 +124,11 @@
             </div>
           </div>
         <div class="col_item">
-          <h2>.gitignore</h2>
-          <p><a href="http://www.dropbox.com/s/nehapromjq99hfb/.gitignore?dl=1">Скачать</a></p>
+           <h2>Удалить node_modules в директории:</h2>
+          <p>cmd:</p>
+          <span>for /d /r . %d in (*имя модуля*) do @if exist "%d" rd /s/q "%d"</span>
+          <p>powershell:</p>
+          <span>Get-ChildItem -path c:\*имя директории* -Include '*имя модуля*' -Recurse -force | Remove-Item -force -Recurse</span>
         </div>
   </section>
 </body>
